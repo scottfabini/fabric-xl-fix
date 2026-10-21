@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fabric-xl-fix"
+version = "1.0.0"
+description = "Fix the MIDI aftertouch-depth issue in AIR Fabric XL presets"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Scott Fabini" }]
+
+[project.scripts]
+fabric-xl-fix = "fabric_xl_fix.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fabric_xl_fix*"]
